@@ -1,5 +1,7 @@
 # 🏗️ Demo: Product API
 
+This is a demo product service using Ruby on Rails as an API.
+
 ## 💎 Gems
 
 1. `ruby 3.0.3`
@@ -52,3 +54,7 @@
 
     **linux**<br>
     `xdg-open coverage/index.html`
+
+## 📑 Documentation
+
+Postman Documentation: [demo_product_api](https://documenter.getpostman.com/view/8596816/UVeCRTx8)
