@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamu berhasil menambahkan produk baru!</title>
+</head>
+<body>
+  <h1>Selamat, <%= @user.name %>!</h1>
+  <h2>Berikut ini adalah produk yang baru saja Anda tambahkan:</h2>
+  <table border="0" cellspacing="0">
+    <tr><td>Name Produk</td><td>: <%= @product_name %></td></tr>
+    <tr><td>Harga</td><td>: <%= @price %></td></tr>
+    <tr><td>Kategori</td><td>: <%= @category %></td></tr>
+    <tr><td>Status Aktif</td><td>: <%= @state ? 'Aktif' : 'Tidak Aktif' %></td></tr>
+    <tr><td>Gambar</td><td>: <%= @image %></td></tr>
+  </table>
+</body>
+</html>

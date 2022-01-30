@@ -23,11 +23,21 @@
 
     `rails db:seed`
 
+1. Install MailCatcher for catch any mail in local development (optional)
+
+    `gem install mailcatcher`
+
 ## 🚚 Execution
 
 1. Launch the app
 
     `rails server`
+
+2. Launch MailCatcher
+
+    `mailcatcher`
+
+    Open `http://127.0.0.1:1080` in the browser
 
 ## 🧪 Test
 

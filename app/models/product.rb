@@ -15,6 +15,20 @@ class Product < ApplicationRecord
 
     self.is_active = true
     save
+    product_confirmation
     puts "-- COMPLETED job for Product name: #{name}. Successful!" unless Rails.env.test?
+  end
+
+  private
+
+  def product_confirmation
+    ProductConfirmationMailer.with(
+      user:     user,
+      name:     name,
+      price:    price,
+      category: category,
+      image:    image,
+      is_state: is_active
+    ).product_confirmation_email(self).deliver_now
   end
 end
