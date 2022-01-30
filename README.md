@@ -22,3 +22,23 @@
 1. Seeding products & users (products owner) into database
 
     `rails db:seed`
+
+## 🚚 Execution
+
+1. Launch the app
+
+    `rails server`
+
+## 🧪 Test
+
+1. Launch the test
+
+    `rspec`
+
+1. Open `converage/index.html` in the browser
+
+    **macOS**<br>
+    `open coverate/index.html`
+
+    **linux**<br>
+    `xdg-open coverage/index.html`
