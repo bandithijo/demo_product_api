@@ -7,7 +7,6 @@ class Product < ApplicationRecord
 
   def activate_product_job
     ActivateProductJob.set(wait: 3.minutes).perform_later(self)
-    puts "-- ACTIVATED job for Product name: #{name}. Successful!" unless Rails.env.test?
   end
 
   def activate!
@@ -16,7 +15,6 @@ class Product < ApplicationRecord
     self.is_active = true
     save
     product_confirmation
-    puts "-- COMPLETED job for Product name: #{name}. Successful!" unless Rails.env.test?
   end
 
   private
