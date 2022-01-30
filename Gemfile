@@ -33,6 +33,7 @@ group :development, :test do
   gem 'rspec-rails',                      '~> 5.1'
   gem 'factory_bot_rails',                '~> 6.2'
   gem 'faker',                            '~> 2.19'
+  gem 'simplecov',                        '~> 0.21.2', require: false
 end
 
 group :development do
